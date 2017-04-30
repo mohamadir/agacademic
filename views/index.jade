@@ -1,0 +1,190 @@
+extends layout
+
+block content
+    // Header
+    header
+      .container
+        .intro-text(style='padding-top: 30px !important; margin-top: 0px !important;')
+          img(src='./img/logo_transparent.png', style='width: 300px; height: 300px; margin-top: 14%;')
+          .intro-lead-in(style="font-family: 'Reem Kufi', sans-serif !important;") 
+          .intro-heading(style="font-family: 'Reem Kufi', sans-serif !important;") جمعية أكاديميي أبوغوش
+          a.page-scroll.btn.btn-xl(href='#services') إعرف أيضاً
+    // Services Section
+    section#services(style="font-family: 'Reem Kufi', sans-serif !important;")
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading(style="font-family: 'Reem Kufi', sans-serif !important;") أهداف الجمعية 
+            h3.section-subheading.text-muted تعرف اكثر على اهداف الجمعية واشترك لتساهم في زيادة عدد الاكاديميين في القرية
+        .row.text-center
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-graduation-cap.fa-stack-1x.fa-inverse
+            h4.service-heading
+              // E-Commerce
+            p.text-muted(style='font-weight: bold !important;')
+              | تعمل الجمعية على تثقيف الشباب والشابات, وبث روح التطوع في نفوس أبنائها, عن طريق محاضرات توجيهية وتثقيفية, جولات ورحلات هادفة, إحياء مناسبات, تقديم عروض, إنشاء مكتبات وإقامة منتديات ثقافية.
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-newspaper-o.fa-stack-1x.fa-inverse
+            h4.service-heading
+              // Responsive Design
+            p.text-muted(style='font-weight: bold !important;')
+              | تحرص الجمعية على أن تبقى صوتها مسموعاً, مؤثراً من خلال إنشاء مجلة ثقافية دوريّة, متنوعة (ولتأخذ الكلمة حقها في التأثير)
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-users.fa-stack-1x.fa-inverse
+            h4.service-heading
+              // Web Security
+            p.text-muted(style='font-weight: bold !important;')
+              | تشكّل الجمعية وأعضاؤها جسداً مترابطاَ متماسكاَ, وتسعى بدورها إلى مد الجسور بين أعضائها واستقطاب أكبر عدد ممكن من الأكاديميين الذين تهمهم مصلحة بلدهم. فهنالك قضايا مشتركة عالقة ممكن متابعتها معًا.
+  
+    // About Section
+    section#about
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading تاريخ الجمعية
+            h3.section-subheading.text-muted نبذة عن فعاليات الجمعية
+        .row
+          .col-lg-12
+            ul.timeline
+              li
+                .timeline-image
+                  img.img-circle.img-responsive(src='img/about/1.jpg', style='height: 100% !important;', alt='')
+                .timeline-panel
+                  .timeline-heading
+                    h4 2014
+                    h4.subheading الملتقى الثقافي اللقاء الاول
+                  .timeline-body
+                    p.text-muted
+                      | يوم الجمعه 18/9 قمنا بافتتاح الملتقى الثقافي بمحاضره شيقه كانت تحت عنوان "اضطراب نقص الانتباه وفرط الحركة A.D.H.D" سمعناها من عضو الجمعية علي ابوغوش الذي انها دراسة اللقب الثاني في علم النفس الاكلينيكي ومن الاخصائية النفسية التربويه ربى ابوغوش مديرة مؤسسة البيت الدافئ لحماية الطفل والاسرة
+              li.timeline-inverted
+                .timeline-image
+                  img.img-circle.img-responsive(src='img/about/2.jpg', alt='', style='height: 100% !important;')
+                .timeline-panel
+                  .timeline-heading
+                    h4 2016
+                    h4.subheading فتح مكتبة ابوغوش لطلاب الجامعات 
+                  .timeline-body
+                    p.text-muted
+                      | قامت الجمعية بافتتاح مكتبة ابوغوش لتصبح مكبة عامه لطلاب ابوغوش وللاجتماعات , فقد قامت بترتيب وتجهيز المكتبة لكي يتمكنوا الطلاب بالدراسة فيها بشكل جماعي او فردي في جو لطيف بعيدا عن كل ازعاج
+              li
+                .timeline-image
+                  img.img-circle.img-responsive(src='img/about/3.jpg', alt='', style='height: 100% !important;')
+                .timeline-panel
+                  .timeline-heading
+                    h4  2016 أبريل
+                    h4.subheading يوم التوجيه الاكيديمي الثالث
+                  .timeline-body
+                    p.text-muted
+                      | قامت الجمعية بالتحضير ليوم التوجيه الاكاديمي وقد حضر عدد كبير من الطلاب في القرية وكان اليوم ناجح جدا , اليوم تكلل باستضافة احد المدربين  ومن ثم فتح فتح محطات لكل تخصص وشرح عن كل موضوع وبالتالي استفادة الطلاب بشكل كبير ..
+              li.timeline-inverted
+                .timeline-image
+                  img.img-circle.img-responsive(src='img/about/4.jpg', style='height: 100% !important;', alt='')
+                .timeline-panel
+                  .timeline-heading
+                    h4 2017 أبريل
+                    h4.subheading أمسية ثقافية
+                  .timeline-body
+                    p.text-muted
+                      | استضاف طلاب مشروع خير جليس وبالتعاون مع جمعية اكاديميي ابوغوش، يوم امس 15/4/2017، الصحفي والكاتب مجد كيال لمنافشة روايته البكر ((مأساة السيد مطر)). ومن الجدير ذكره بأن مشروع خير جليس بدأ بمبارة شبابية اطلقها مجموعة من الطالبات والطلاب الثانويين، حيث يختارون كل شهر رواية معينة ثم يناقشونها ويحللون مضامينها ضمن لقاءات دورية كل اسبوع. ضمن مشاريع مركز أبوغوش الجماهيري (מתנ"ס אבו-גוש) وقد ناقش الطلاب مأساة السيد مطر بحضور الكاتب،
+              li.timeline-inverted
+                .timeline-image
+                  h4
+                    | كن جزءاً
+                    br
+                    | من 
+                    br
+                    | ...هذه الجمعية
+    // Team Section
+    section#team.bg-light-gray
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading إدارة الجمعية
+            h3.section-subheading.text-muted أبرز اعضاء الجمعية والذين يبذلون جهود كبيرة فيها
+        .row
+          .col-sm-4
+            .team-member
+              img.img-responsive.img-circle(src='img/team/1.jpg', alt='', style='width: 350px  !important; height: 300px !important;')
+              h4 ابراهيم عبدالرحمن
+              p.text-muted نائب مدير الجمعية
+              ul.list-inline.social-buttons
+                li
+                  a(href='#')
+                    i.fa.fa-twitter
+                li
+                  a(href='#')
+                    i.fa.fa-facebook
+                li
+                  a(href='#')
+                    i.fa.fa-linkedin
+          .col-sm-4
+            .team-member
+              img.img-responsive.img-circle(src='img/team/2.jpg', alt='', style='width: 350 !important; height: 300px !important;')
+              h4 يوسف محمود جبر
+              p.text-muted مدير الجمعية
+              ul.list-inline.social-buttons
+                li
+                  a(href='#')
+                    i.fa.fa-twitter
+                li
+                  a(href='#')
+                    i.fa.fa-facebook
+                li
+                  a(href='#')
+                    i.fa.fa-linkedin
+          .col-sm-4
+            .team-member
+              img.img-responsive.img-circle(src='img/team/3.jpg', alt='', style='width: 350px !important; height: 300px !important;')
+              h4 غالي جبر
+              p.text-muted نائب مدير الجمعية
+              ul.list-inline.social-buttons
+                li
+                  a(href='#')
+                    i.fa.fa-twitter
+                li
+                  a(href='#')
+                    i.fa.fa-facebook
+                li
+                  a(href='#')
+                    i.fa.fa-linkedin
+        .row
+          .col-lg-8.col-lg-offset-2.text-center
+            p.large.text-muted 
+              |لمزيد من اعضاء الجمعية انقر 
+              a(href='/team') هنا
+ 
+    // Contact Section
+    section#contact
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading راسلنا
+            h3.section-subheading.text-muted(style='color: #fff !important;') جمعية أكاديميي أبوغوش تشكرك جزيل الشكر على مراسلتك لنا
+        .row
+          .col-lg-12
+            form#contactForm(name='sentMessage', novalidate='')
+              .row
+                .col-md-6
+                  .form-group
+                    input#name.form-control(type='text', placeholder='إسمك *', required='', data-validation-required-message='الرجاء كتابة اسمك')
+                    p.help-block.text-danger
+                  .form-group
+                    input#email.form-control(type='email', placeholder='أيميل *', required='', data-validation-required-message='الرجاء كتابة بريدك الالكتروني.')
+                    p.help-block.text-danger
+                  .form-group
+                    input#phone.form-control(type='tel', placeholder='رقم الهاتف *', required='', data-validation-required-message='الرجاء كتابة رقمك.')
+                    p.help-block.text-danger
+                .col-md-6
+                  .form-group
+                    textarea#message.form-control(placeholder='لارسالة *', required='', data-validation-required-message='لا يمكن ارسال رسالة فارغة.')
+                    p.help-block.text-danger
+                .clearfix
+                .col-lg-12.text-center
+                  #success
+                  button.btn.btn-xl(type='submit') أرسل

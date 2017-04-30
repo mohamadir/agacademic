@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .loginmodal-container
+    h1 دخول المدير
+    br
+    if (error)
+      .alert.alert-danger
+         strong= error
+    form(method='post' action="/auth/login")
+      input(type='text', name='user', placeholder='مستخدم')
+      input(type='password', name='pass', placeholder='كلمة المرور')
+      input.login.loginmodal-submit(type='submit', value='دخول')
+    .login-help
+
