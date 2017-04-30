@@ -17,10 +17,10 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 // DataBase 
-var mongoose = require('mongoose');
+/*var mongoose = require('mongoose');
 
 // Database
-mongoose.connect('mongodb://academic:academic1234@ds127341.mlab.com:27341/academic');
+mongoose.connect('mongodb://academic:academic1234@ds127341.mlab.com:27341/academic');*/
 //mongoose.connect('mongodb://localhost/academic');
 
 // uncomment after placing your favicon in /public
