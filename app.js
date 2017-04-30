@@ -31,16 +31,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 // session 
-/*app.use(session({
+app.use(session({
   secret: "secret",
   saveUninitialized: true,
   resave: true
 }));
-*/
+
 app.use('/', index);
 app.use('/users', users);
 app.use('/auth', auth);
-//app.use('/admin', admin);
+app.use('/admin', admin);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
