@@ -21,6 +21,8 @@ router.post('/login', function(req, res, next) {
   	{
   		if(req.body.pass === user.password)
   		{
+        var user2= user.user;
+        console.log(user2);
   			req.session.user=user;
   			res.redirect('/admin');
   		}

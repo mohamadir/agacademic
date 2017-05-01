@@ -3,7 +3,9 @@ var router = express.Router();
 var Admin = require('../models/admin');
 
 router.get('/',checkLogin, function(req, res, next) {
-  res.render('admin', { page: 'admin' });
+  var user = req.session.user;
+  console.log("im in admin + "+req.session.user);
+  res.render('admin', {user: user});
 });
 
 function checkLogin(req,res,next)
