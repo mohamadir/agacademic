@@ -5,7 +5,7 @@ var Admin = require('../models/admin');
 router.get('/',checkLogin, function(req, res, next) {
   var user = req.session.user;
   console.log("im in admin + "+req.session.user);
-  res.render('admin', {user: user});
+  res.render('admin');
 });
 
 function checkLogin(req,res,next)

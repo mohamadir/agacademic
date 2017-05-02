@@ -11,6 +11,8 @@ var index = require('./routes/index');
 var auth = require('./routes/auth');
 var users = require('./routes/users');
 var admin = require('./routes/admin');
+var newartical = require('./routes/newartical');
+var artical_text = require('./routes/artical_text');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -18,8 +20,6 @@ app.set('view engine', 'jade');
 
 // DataBase 
 var mongoose = require('mongoose');
-
-// Database
 mongoose.connect('mongodb://academic:academic1234@ds127341.mlab.com:27341/academic');
 //mongoose.connect('mongodb://localhost/academic');
 
@@ -41,6 +41,8 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/auth', auth);
 app.use('/admin', admin);
+app.use('/artical_text', artical_text);
+app.use('/newartical', newartical);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
